@@ -1,0 +1,76 @@
+header {
+text-align: right;
+}
+
+
+
+body {
+  background-color: aqua;
+}
+
+.split {
+  height: 50%;
+  bottom: 25%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 3;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: aliceblue;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: antiquewhite;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 450px;
+  border-radius: 30%;
+  border-style: solid;
+  border-radius: 100px;
+  padding: 10px;
+  flex: 0 0 300px;
+  margin: 20px;
+}
+
+
+.WIM {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+#useraname,
+#title,
+#context { 
+  width: 240px;
+  display: inline-block;
+  border-style: double;
+  padding: 20px;
+  margin: 0;
+  font-size: 50px;
+  text-align: left;
+  }
+
+  .footer {
+      background-color: #F1F1F1;
+      text-align: center;
+      padding: 10px;
+  }
