@@ -8,13 +8,18 @@ body {
   background-color: aqua;
 }
 
+.sun {
+    background-color: black;
+    color: white;
+}
+
 .split {
   height: 50%;
   bottom: 25%;
   width: 50%;
   position: fixed;
   z-index: 1;
-  top: 3;
+  top: 10em;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -48,13 +53,14 @@ body {
   border-radius: 100px;
   padding: 10px;
   flex: 0 0 300px;
-  margin: 20px;
+  margin: 0em;
 }
 
 
 .WIM {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  text-align: center;
 }
 
 .useraname,
@@ -63,22 +69,24 @@ body {
   align-self: start;
   display: block;
   border-style: double;
-  font-size: 50px;
+  font-size: 100px;
   text-align: left;
   }
-  
+
 input {
   display: block;
   align-self: start;
+  padding-top: 1em;
 }
+
   a {
     border-style: solid;
-    padding-block: 10px;
+    padding-block: 2em;
     width: auto;
   }
 
   .footer {
       background-color: #F1F1F1;
       text-align: center;
-      padding: 10px;
+      padding: 3em;
   }
