@@ -9,21 +9,10 @@ background-color: aqua;
     right: 70px;
 }
 
-#title {
-    text-align: center;
-    display: flex;
-}
-
-#showPrevious {
-    padding-top: 10em;
-    padding-bottom: 3em;
-}
-
 .card-body {
     margin-top: 2em;
     display: block;
     border-style: dotted;
-    border-color: blue;
 }
 
 .card {  
@@ -31,7 +20,6 @@ background-color: aqua;
     text-align: center;
     margin-top: 1em;
     margin-bottom: .5em;
-    border-color: blue;
     font-family: monospace;
     font-size: 2vw;
 
@@ -39,22 +27,20 @@ background-color: aqua;
 
 .username {
     border-style: solid;
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: .5em;
-    border-color: red;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .title {
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: .5em;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .context {
     border-style: solid;
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: .5em;
-    border-color: black;
     font-family: 'Times New Roman', Times, serif;
 }

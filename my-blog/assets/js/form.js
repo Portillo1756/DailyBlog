@@ -1,10 +1,12 @@
-// Access toggle switch HTML element
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("sun");
-}
+// // Access toggle switch HTML element
+// function myFunction() {
+//   var element = document.body;
+//   element.classList.toggle("sun");
+// }
 
-// if (localStorage.getItem('saveLastPost')==null){} 
+
+// if (localStorage.getItem('saveLastPost')==null){}
+//   for(let i=0; i<saveLastPost.length; i++){}
   // Save related form data as an object
 function saveLastPost(e){
 e.preventDefault()
@@ -29,5 +31,6 @@ const context = document.getElementById('context');
   localStorage.setItem('saveLastPost', JSON.stringify(lastPost));
   location.href="./blog.html"
 }
+
 
 summit.addEventListener ("click", saveLastPost)

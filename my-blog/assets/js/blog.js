@@ -1,13 +1,15 @@
 let number = JSON.parse(localStorage.getItem('saveLastPost'))
 console.log(number)
 
+if (localStorage.getItem('saveLastPost')==null){
+for(let i=0; i<saveLastPost.length; i++){
 
 function showPrevious() {
-    const divTag=document.createElement("div")
-    divTag.setAttribute("class", "card")
-
     const headTag=document.createElement("div")
     headTag.setAttribute("class", "card-body")
+
+    const divTag=document.createElement("div")
+    divTag.setAttribute("class", "card")
 
     const usernamePTag=document.createElement("h5")
     usernamePTag.textContent = number.username
@@ -25,5 +27,7 @@ function showPrevious() {
 }
 
 showPrevious()
+ }}
 
-divTag.setAttribute
+
+// divTag.setAttribute
