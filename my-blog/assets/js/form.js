@@ -4,14 +4,15 @@
 //   element.classList.toggle("sun");
 // }
 
-
+let blogArray = JSON.parse(localStorage.getItem('saveLastPost')) || []
 // if (localStorage.getItem('saveLastPost')==null){}
 //   for(let i=0; i<saveLastPost.length; i++){}
   // Save related form data as an object
 function saveLastPost(e){
 e.preventDefault()
 console.log(e)
-let blogarray= JSON.parse(localStorage.getItem('saveLastPost')) || []
+
+console.log(blogArray)
 const username = document.getElementById('username');
 const title = document.getElementById('title');
 const context = document.getElementById('context');
@@ -25,11 +26,11 @@ const context = document.getElementById('context');
     title:title.value,
     context:context.value,
   }
-  blogarray.push(lastPost)
+  blogArray.push(lastPost)
   console.log(lastPost)
    // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
-  localStorage.setItem('saveLastPost', JSON.stringify(blogarray));
-  location.href="./blog.js"
+  localStorage.setItem('saveLastPost', JSON.stringify(blogArray));
+  location.href="./blog.html"
 }
 
 

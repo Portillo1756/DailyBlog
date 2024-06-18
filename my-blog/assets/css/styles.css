@@ -5,13 +5,19 @@ text-align: right;
 
 
 body {
-  background-color: aqua;
+  background-color: var(--secondary-color);
 }
 
-.sun {
-    background-color: black;
-    color: white;
+:root{
+  --primery-color: #edf2fc;
+  --secondary-color: #212121;
 }
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
 
 .split {
   height: 50%;
@@ -27,13 +33,13 @@ body {
 /* Control the left side */
 .left {
   left: 0;
-  background-color: aliceblue;
+  background-color: var(--primery-color);
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: antiquewhite;
+  background-color: var(--primery-color);
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -86,7 +92,7 @@ input {
   }
 
   .footer {
-      background-color: #F1F1F1;
+      background-color: var(--primery-color);
       text-align: center;
       padding: 3em;
   }
