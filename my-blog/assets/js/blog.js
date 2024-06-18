@@ -1,13 +1,10 @@
 let number = JSON.parse(localStorage.getItem('saveLastPost'))
 console.log(number)
 
-if (localStorage.getItem('saveLastPost')==null){
-for(let i=0; i<saveLastPost.length; i++){
-
 function showPrevious() {
     const headTag=document.createElement("div")
     headTag.setAttribute("class", "card-body")
-
+    
     const divTag=document.createElement("div")
     divTag.setAttribute("class", "card")
 
@@ -25,8 +22,12 @@ function showPrevious() {
     document.body.append(divTag)
     divTag.append(headTag)
 }
-
 showPrevious()
+
+if (localStorage.getItem('saveLastPost')==null){
+for(let i=0; i<saveLastPost.length; i++){
+
+
  }}
 
 

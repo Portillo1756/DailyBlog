@@ -11,7 +11,7 @@
 function saveLastPost(e){
 e.preventDefault()
 console.log(e)
-
+let blogarray= JSON.parse(localStorage.getItem('saveLastPost')) || []
 const username = document.getElementById('username');
 const title = document.getElementById('title');
 const context = document.getElementById('context');
@@ -25,11 +25,11 @@ const context = document.getElementById('context');
     title:title.value,
     context:context.value,
   }
-  
+  blogarray.push(lastPost)
   console.log(lastPost)
    // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
-  localStorage.setItem('saveLastPost', JSON.stringify(lastPost));
-  location.href="./blog.html"
+  localStorage.setItem('saveLastPost', JSON.stringify(blogarray));
+  location.href="./blog.js"
 }
 
 
