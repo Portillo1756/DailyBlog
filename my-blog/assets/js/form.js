@@ -1,12 +1,5 @@
-// // Access toggle switch HTML element
-// function myFunction() {
-//   var element = document.body;
-//   element.classList.toggle("sun");
-// }
-
 let blogArray = JSON.parse(localStorage.getItem('saveLastPost')) || []
-// if (localStorage.getItem('saveLastPost')==null){}
-//   for(let i=0; i<saveLastPost.length; i++){}
+
   // Save related form data as an object
 function saveLastPost(e){
 e.preventDefault()
