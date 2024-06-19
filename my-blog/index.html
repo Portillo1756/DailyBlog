@@ -13,7 +13,7 @@
 <!-- buttom to show the sun -->
   <header>
     <button id="icon">☀️</button>
-    
+  
   </header>
   
   <!-- this is what is going to be displaying on the left side of the page "a picture of a city" -->
@@ -46,6 +46,13 @@
           </div>
     </div>
 
+      <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+        }
+      </script>
     <!-- <script src="./assets/js/logic.js"></script> -->
   </script>
     <script src="./assets/js/form.js">

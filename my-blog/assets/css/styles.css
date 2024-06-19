@@ -10,7 +10,12 @@ body {
 
 :root{
   --primery-color: #edf2fc;
-  --secondary-color: #212121;
+  --secondary-color: #fff;
+}
+
+.dark-theme {
+  --primery-color: #edf2fc;
+  --secondary-color: #212121
 }
 
 #icon {

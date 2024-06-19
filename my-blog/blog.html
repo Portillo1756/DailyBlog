@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <button id="sun">☀️</button>
+        <button id="icon">☀️</button>
     </header>
     <nav>
         <a href="./index.html">back</a>
@@ -21,6 +21,13 @@
         <h4 class="title">title:</h4>
         <h3 class="context">context:</h3>
     </div>
-    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/blog.js">
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+          document.body.classList.toggle("dark-theme");
+        }
+    </script>
 </body>
 </html>

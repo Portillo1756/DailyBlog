@@ -1,8 +1,18 @@
+:root{
+    --primery-color: #edf2fc;
+    --secondary-color: #fff;
+  }
+  
+  .dark-theme {
+    --primery-color: #edf2fc;
+    --secondary-color: #212121
+  }
+  
 .body {
-background-color: aqua;
+background-color: var(--secondary-color);
 }
 
-#sun{
+#icon{
     text-align: justify;
     display: block;
     position: absolute;
